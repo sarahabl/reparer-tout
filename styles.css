@@ -10,6 +10,9 @@ p, ul, li, button, form, a {
 font-family: 'Montserrat', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 /* Barre de navigation */
 nav {
@@ -51,6 +54,10 @@ text-decoration: none;
 font-weight: bold;
 }
 
+.nav-links a:hover {
+    color: white; /* Couleur du texte au survol */
+}
+
 /* Barre de recherche */
 .search-bar {
 position: relative;
@@ -86,6 +93,12 @@ border-radius: 5px;
 font-weight: bold;
 cursor: pointer;
 }
+
+.contact-btn:hover {
+    background-color: #BC4300; /* Couleur au survol */
+    color: white; /* Couleur du texte au survol */
+}
+
 
 /* Style de la section hero */
 .hero {
@@ -338,9 +351,14 @@ border-radius: 6px;
 border:none;
 }
 
+.contact-form button:hover {
+    background-color: #BC4300; /* Couleur au survol */
+    color: white; /* Couleur du texte au survol */
+}
+
 
 /* Services */
-.mes-services {
+#mes-services {
 background-color: #171836; 
 padding: 40px 140px;
 display: flex;
@@ -348,7 +366,7 @@ flex-direction: column;
 gap: 40px;
 }
 
-.mes-services h2 {
+#mes-services h2 {
 color: white
 }
 
@@ -377,6 +395,11 @@ align-content: left;
 display:flex;
 gap:20px;
 align-items: center;
+}
+
+.service:hover {
+    border: 2px solid #E37538;
+    transform: scale(1.05); /* Agrandissement de 5% */
 }
 
 .service img {
