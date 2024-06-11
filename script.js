@@ -27,11 +27,10 @@ window.addEventListener('load', compteur);
 
 // GARDER LA NAV BAR FIXE
 $(window).scroll(function() {
-var scrollPosition = $(this).scrollTop();
-if (scrollPosition >= 200) {
-$('.nav').addClass('fixed');
-} else {
-$('.nav').removeClass('fixed');
-}
+    var scrollPosition = $(this).scrollTop();
+    if (scrollPosition > 200) {
+        $('.nav').addClass('fixed-top');
+    } else {
+        $('.nav').removeClass('fixed-top');
+    }
 });
-
