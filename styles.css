@@ -11,7 +11,7 @@ font-family: 'Montserrat', sans-serif;
 }
 
 html {
-    scroll-behavior: smooth;
+scroll-behavior: smooth;
 }
 
 /* Barre de navigation */
@@ -24,6 +24,12 @@ align-items: center;
 padding: 9px 140px;
 }
 
+.nav.fixed {
+position: fixed;
+top: 0;
+z-index: 1000;
+}
+
 /* Logo */
 .logo img {
 height: 35px;
@@ -32,11 +38,11 @@ height: 35px;
 /* Liens de navigation */
 
 .menu{
-    display: flex;
-    justify-content: flex-end;
-    gap: 20px;
-    height: 35px;
-    align-items: center;
+display: flex;
+justify-content: flex-end;
+gap: 20px;
+height: 35px;
+align-items: center;
 }
 
 .nav-links {
@@ -55,7 +61,7 @@ font-weight: bold;
 }
 
 .nav-links a:hover {
-    color: white; /* Couleur du texte au survol */
+color: white; /* Couleur du texte au survol */
 }
 
 /* Barre de recherche */
@@ -95,8 +101,8 @@ cursor: pointer;
 }
 
 .contact-btn:hover {
-    background-color: #BC4300; /* Couleur au survol */
-    color: white; /* Couleur du texte au survol */
+background-color: #BC4300; /* Couleur au survol */
+color: white; /* Couleur du texte au survol */
 }
 
 
@@ -213,6 +219,11 @@ padding: 10px;
 background-color:#2A743A;
 border-radius:15px;
 align-items: center;
+}
+
+.repair-option:hover {
+border: 4px solid #E37538;
+transform: scale(1.05); /* Agrandissement de 5% */
 }
 
 .repair-option img {
@@ -352,8 +363,8 @@ border:none;
 }
 
 .contact-form button:hover {
-    background-color: #BC4300; /* Couleur au survol */
-    color: white; /* Couleur du texte au survol */
+background-color: #BC4300; /* Couleur au survol */
+color: white; /* Couleur du texte au survol */
 }
 
 
@@ -398,8 +409,8 @@ align-items: center;
 }
 
 .service:hover {
-    border: 2px solid #E37538;
-    transform: scale(1.05); /* Agrandissement de 5% */
+border: 4px solid #E37538;
+transform: scale(1.05); /* Agrandissement de 5% */
 }
 
 .service img {
@@ -416,10 +427,11 @@ color:white;
 /* Footer */
 footer {
 background: linear-gradient(to bottom, rgba(130, 219, 149, 0.25), rgba(231, 255, 236, 0.25));
-padding: 40px 100px;
+padding: 40px 140px;
 display: flex;
 align-items: center;
 justify-content: space-between;
+flex-direction: row-reverse;
 }
 
 .footer-container {
