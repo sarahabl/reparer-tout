@@ -159,19 +159,19 @@ padding: 60px 140px;
 color: #CCDFEC;
 }
 
-.stat-item {
+.stat-item, .rate {
 justify-content: center;
 align-items: center;
 display: flex;
 gap:20px;
 }
 
-.stat-item h2 {
+.stat-item h2, .rate h2 {
 margin: 0;
 font-size: 36px;
 }
 
-.stat-item p {
+.stat-item p, .rate p {
 margin: 0;
 font-size: 18px;
 }
@@ -219,6 +219,9 @@ padding: 5px;
 
 /* Témoignages */
 .témoignages {
+max-width:100%;
+height:300px;
+overflow-x:auto;
 background-color: #171836;
 color: white;
 padding: 60px 140px;
@@ -231,6 +234,7 @@ flex-direction: row;
 .temoignage-item {
 margin-right:30px; 
 max-width: 300px;
+display:inline-block;
 }
 
 .temoignage-item h2 {
@@ -249,7 +253,6 @@ display: flex;
 justify-content: left;
 }
 
-/* Étoiles bleues */
 .blue-star {
 color: #6CABC2;
 }
@@ -257,6 +260,8 @@ color: #6CABC2;
 .orange-star {
 color: #E37538;
 }
+
+
 
 /* Présentation */
 .presentation {
@@ -338,6 +343,9 @@ border:none;
 .mes-services {
 background-color: #171836; 
 padding: 40px 140px;
+display: flex;
+flex-direction: column;
+gap: 40px;
 }
 
 .mes-services h2 {
@@ -393,7 +401,7 @@ justify-content: space-between;
 
 .footer-container {
 display: flex;
-gap: 10px;
+gap: 40px;
 padding: 0px 10px;
 }
 
