@@ -23,14 +23,3 @@ stat.innerText = cible; // Assurez-vous que la valeur finale est exacte
 
 // Appelez la fonction immédiatement après le chargement de la page (sans délai)
 window.addEventListener('load', compteur);
-
-
-// GARDER LA NAV BAR FIXE
-$(window).scroll(function() {
-    var scrollPosition = $(this).scrollTop();
-    if (scrollPosition > 200) {
-        $('.nav').addClass('fixed-top');
-    } else {
-        $('.nav').removeClass('fixed-top');
-    }
-});
