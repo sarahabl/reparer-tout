@@ -28,7 +28,7 @@ color: #E37538;
 display: flex;
 justify-content: space-between;
 align-items: center;
-padding: 9px 140px;
+padding: 2% 4%;
 }
 
 /* Logo */
@@ -72,7 +72,7 @@ display: flex;
 align-items: center;
 background-color: #E8F0FE;
 border-radius: 6px;
-padding: 5px 10px;
+padding: 2%;
 }
 
 .search-bar img {
@@ -83,7 +83,7 @@ margin-right: 5px;
 border: none;
 outline: none;
 background-color: transparent;
-padding: 5px;
+padding: 4%;
 width: 100%;
 }
 
@@ -95,7 +95,7 @@ color: #A2B9CD;
 .contact-btn {
 background-color:#E37538;
 border: none;
-padding: 10px 20px;
+padding: 1% 2%;
 border-radius: 5px;
 font-weight: bold;
 cursor: pointer;
@@ -111,11 +111,11 @@ color: white; /* Couleur du texte au survol */
 .hero {
 display: flex;
 justify-content: space-between;
-padding: 40px 140px;
+padding: 10% 10%;
 background: linear-gradient(to bottom, rgba(130, 219, 149, 0.25), rgba(231, 255, 236, 0.25));
-gap: 100px;
+gap: 10%;
 align-items: center;
-padding: 140px;
+padding: 10% 10% 5%;
 }
 
 /* Contenu à gauche */
@@ -140,7 +140,7 @@ border: none;
 display:flex;
 border-radius:25px;
 margin-top:40px;
-padding:10px;
+padding:4%;
 }
 
 .label-qualirepar img {
@@ -166,7 +166,6 @@ width: 50%;
 }
 
 .hero-image img {
-width: 100%;
 height: auto;
 border-radius: 15px;
 }
@@ -176,7 +175,7 @@ border-radius: 15px;
 background-color: #1f1f57;
 display: flex;
 justify-content: space-around;
-padding: 60px 140px;
+padding: 5% 10%;
 color: #CCDFEC;
 }
 
@@ -201,7 +200,7 @@ font-size: 18px;
 .repair-choice {
 background-color: #FFD3F3;
 text-align: left;
-padding: 60px 140px;
+padding: 5% 10%;
 }
 
 .repair-choice h2 {
@@ -210,14 +209,17 @@ color: #1C4F71;
 
 .repair-options {
 display: flex;
-justify-content: space-around;
+justify-content: space-evenly;
+align-items: center;
+flex-wrap: nowrap;
+gap: 4%;
 }
 
 .repair-option {
 width: calc(33% - 20px);
 margin: 40px;
 border: 4px solid #1C4F71;
-padding: 10px;
+padding: 4%;
 background-color:#2A743A;
 border-radius:15px;
 align-items: center;
@@ -240,21 +242,22 @@ margin: auto;
 .repair-option h3 {
 color: #FFD3F3; 
 margin-top: 15px;
-padding: 5px;
+padding: 8%;
 }
 
 /* Témoignages */
 .témoignages {
 max-width:100%;
-height:300px;
+height:auto;
 overflow-x:auto;
 background-color: #171836;
 color: white;
-padding: 60px 140px;
+padding: 5% 10%;
 display: flex;
 align-items: flex-start;
 justify-content: space-around;
 flex-direction: row;
+gap: 4%;
 }
 
 .temoignage-item {
@@ -294,7 +297,7 @@ color: #E37538;
 display: flex;
 justify-content: space-between;
 background: linear-gradient(to bottom, rgba(130, 219, 149, 0.25), rgba(231, 255, 236, 0.25));
-padding: 60px 140px;
+padding: 5% 10%;
 gap:100px;
 }
 
@@ -313,10 +316,9 @@ color:#1C4F71;
 }
 
 /* Diagnostic */
-
 .diagnostic-gratuit {
 background-color: #FFD3F3;
-padding: 60px 140px;
+padding: 5% 10%;
 }
 
 .diagnostic-gratuit h2 {
@@ -332,7 +334,7 @@ text-align: center;
 .contact-form{
 width: 500px; /* Largeur fixe */
 margin: 50px auto;
-padding: 20px;
+padding: 2%;
 border: 1px solid rgba(0, 0, 0, 0.5);
 background-color: #F8E7F8;
 }
@@ -357,7 +359,7 @@ width: calc(100%);
 .contact-form button {
 display: block;
 width: 180px;
-padding: 10px;
+padding: 4%;
 margin-top: 10px;
 background-color: #E37538;
 border-radius: 6px;
@@ -373,7 +375,7 @@ color: white; /* Couleur du texte au survol */
 /* Services */
 #mes-services {
 background-color: #171836; 
-padding: 40px 140px;
+padding: 5% 10%;
 display: flex;
 flex-direction: column;
 gap: 40px;
@@ -403,7 +405,7 @@ background-color: #ffffff;
 border-radius: 15px;
 box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
 width: calc(33% - 0px);
-padding: 20px 20px;
+padding: 2% 4%;
 align-content: left;
 display:flex;
 gap:20px;
@@ -429,7 +431,7 @@ color:white;
 /* Footer */
 footer {
 background: linear-gradient(to bottom, rgba(130, 219, 149, 0.25), rgba(231, 255, 236, 0.25));
-padding: 40px 140px;
+padding: 5% 10%;
 display: flex;
 align-items: center;
 justify-content: space-between;
@@ -439,7 +441,6 @@ flex-direction: row-reverse;
 .footer-container {
 display: flex;
 gap: 40px;
-padding: 0px 10px;
 }
 
 .footer-column ul {
