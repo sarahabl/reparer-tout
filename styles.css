@@ -2,180 +2,224 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
 
+/* Typography */
 h1, h2, h3 {
-font-family: 'Montserrat Alternates', sans-serif;
+  font-family: 'Montserrat Alternates', sans-serif;
 }
 
 p, ul, li, button, form, a {
-font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
-html {
-scroll-behavior: smooth;
+/* Layout */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.column {
+  flex-basis: 50%;
+}
+
+/* Colors */
+:root {
+  --primary-color: #E37538;
+  --secondary-color: #171836;
 }
 
 /* Barre de navigation */
 header {
-position: fixed;
-top: 0;
-width: 100%;
-z-index:1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
 
 nav {
-background-color: #171836;
-color: #E37538;
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 2% 4%;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2% 4%;
 }
 
 /* Logo */
 .logo img {
-height: 35px;
+  height: 35px;
 }
 
-/* Liens de navigation */
-
-.menu{
-display: flex;
-justify-content: flex-end;
-gap: 20px;
-height: 35px;
-align-items: center;
+/* Liens de navigation (desktop) */
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  height: 35px;
+  align-items: center;
 }
 
 .nav-links {
-list-style: none;
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
 .nav-links li {
-display: inline;
-margin-right: 20px;
+  display: inline;
+  /* margin-right: 20px; */
 }
 
 .nav-links a {
-color: #E37538;
-text-decoration: none;
-font-weight: bold;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-color: white; /* Couleur du texte au survol */
+  color: white; /* Couleur du texte au survol */
 }
 
 /* Barre de recherche */
 .search-bar {
-position: relative;
-display: flex;
-align-items: center;
-background-color: #E8F0FE;
-border-radius: 6px;
-padding: 2%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #E8F0FE;
+  border-radius: 6px;
+  padding: 2%;
 }
 
 .search-bar img {
-margin-right: 5px;
+  margin-right: 5px;
 }
 
 .search-bar input[type="text"] {
-border: none;
-outline: none;
-background-color: transparent;
-padding: 4%;
-width: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 4%;
+  width: 100%;
 }
 
 .search-bar input[type="text"]::placeholder {
-color: #A2B9CD;
+  color: #A2B9CD;
 }
 
 /* Bouton de contact */
 .contact-btn {
-background-color:#E37538;
-border: none;
-padding: 1% 2%;
-border-radius: 5px;
-font-weight: bold;
-cursor: pointer;
+  background-color: var(--primary-color);
+  border: none;
+  padding: 1% 2%;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .contact-btn:hover {
-background-color: #BC4300; /* Couleur au survol */
-color: white; /* Couleur du texte au survol */
+  background-color: #BC4300; /* Couleur au survol */
+  color: white; /* Couleur du texte au survol */
+}
+
+/* Burger menu */
+.burger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+/* Responsive rules */
+@media (max-width: 768px) {
+  .menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background-color: #333;
+      width: 200px;
+      border: 1px solid #444;
+      border-radius: 5px;
+  }
+
+  .burger-menu {
+      display: block;
+  }
 }
 
 
-/* Style de la section hero */
+/* Hero section */
 .hero {
-display: flex;
-justify-content: space-between;
-padding: 10% 10%;
-background: linear-gradient(to bottom, rgba(130, 219, 149, 0.25), rgba(231, 255, 236, 0.25));
-gap: 10%;
-align-items: center;
-padding: 10% 10% 5%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10% 10%;
+  background: linear-gradient(to bottom, rgba(130, 219, 149, 0.25), rgba(231, 255, 236, 0.25));
+  gap: 10%;
+  align-items: center;
+  padding: 10% 10%;
 }
 
-/* Contenu à gauche */
 .left {
-width: 50%;
-gap: 100px;
+  width: 50%;
+  gap: 100px;
 }
 
 .hero-content h1 {
-color: #1C4F71;
-font-size: 2.5em;
+  color: #1C4F71;
+  font-size: 2.5em;
 }
 
 .hero-content p {
-color: #030821;
+  color: #030821;
 }
 
-/* Label QualiRépar */
 .label-qualirepar {
-background-color: #D9F3FD;
-border: none;
-display:flex;
-border-radius:25px;
-margin-top:40px;
-padding:4%;
+  background-color: #D9F3FD;
+  border: none;
+  display: flex;
+  border-radius: 25px;
+  margin-top: 40px;
+  padding: 4%;
 }
 
 .label-qualirepar img {
-width: 100px;
-height: 53.23px;
-margin:20px;
+  width: 100px;
+  height: 53.23px;
+  margin: 20px;
 }
 
 .label-qualirepar p {
-color: #020316;
-margin: 5px;
-font-size: 12px;
+  color: #020316;
+  margin: 5px;
+  font-size: 12px;
 }
 
 .label-qualirepar a {
-color: #020316;
-text-decoration: none;
+  color: #020316;
+  text-decoration: none;
 }
 
-/* Image à droite */
 .hero-image {
-width: 50%;
+  width: 50%;
 }
 
 .hero-image img {
-height: auto;
-border-radius: 15px;
+  height: auto;
+  border-radius: 15px;
 }
 
 /* Stats */
 .stats {
-background-color: #1f1f57;
-display: flex;
-justify-content: space-around;
-padding: 5% 10%;
+  background-color: #1f1f57;
+  display: flex;
+  justify-content: space-around;
+  padding: 5% 10%;
 color: #CCDFEC;
 }
 
@@ -289,8 +333,6 @@ color: #6CABC2;
 color: #E37538;
 }
 
-
-
 /* Présentation */
 .presentation {
 display: flex;
@@ -338,7 +380,6 @@ border: 1px solid rgba(0, 0, 0, 0.5);
 background-color: #F8E7F8;
 }
 
-
 .contact-form .input-group {
 margin-bottom: 30px;
 display:flex;
@@ -369,7 +410,6 @@ border:none;
 background-color: #BC4300; /* Couleur au survol */
 color: white; /* Couleur du texte au survol */
 }
-
 
 /* Services */
 #mes-services {
@@ -426,7 +466,6 @@ text-align: left;
 color:white;
 }
 
-
 /* Footer */
 footer {
 background: linear-gradient(to bottom, rgba(130, 219, 149, 0.25), rgba(231, 255, 236, 0.25));
@@ -461,3 +500,9 @@ margin-bottom: 20px;
 height: auto;
 width: 150px;
 }
+
+/* Animation */
+html {
+    scroll-behavior: smooth;
+    }
+
