@@ -385,17 +385,17 @@ color:#1C4F71;
 }
 
 /* Diagnostic */
-.diagnostic-gratuit {
+.diagnostic {
 background-color: var(--light-pink);
 padding: 5% 10%;
 }
 
-.diagnostic-gratuit h2 {
+.diagnostic h2 {
 color: var(--green);
 text-align: center;
 }
 
-.diagnostic-gratuit p {
+.diagnostic p {
 color: #666;
 text-align: center;
 }
