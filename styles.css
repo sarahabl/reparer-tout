@@ -321,7 +321,7 @@ margin-top: 15px;
 max-width:100%;
 height:auto;
 overflow-x:auto;
-background-color: var(--secondary-color)
+background-color: var(--secondary-color);
 color: white;
 padding: 5% 10%;
 display: flex;
@@ -473,7 +473,6 @@ border-radius: 15px;
 box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
 width: calc(33% - 0px);
 padding: 2% 4%;
-align-content: left;
 display:flex;
 gap:20px;
 align-items: center;
